@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SimpleAtomicLongUnitTest" project="W3-A2-PalantirManager" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.vuum.mocca.SimpleAtomicLongUnitTest" time="0.0">
+    <testcase name="testGet" classname="edu.vuum.mocca.SimpleAtomicLongUnitTest" time="0.0"/>
+    <testcase name="testGetAndIncrement" classname="edu.vuum.mocca.SimpleAtomicLongUnitTest" time="0.0"/>
+    <testcase name="testIncrementAndGet" classname="edu.vuum.mocca.SimpleAtomicLongUnitTest" time="0.0"/>
+    <testcase name="testSimpleAtomicLong" classname="edu.vuum.mocca.SimpleAtomicLongUnitTest" time="0.0"/>
+    <testcase name="testDecrementAndGet" classname="edu.vuum.mocca.SimpleAtomicLongUnitTest" time="0.0"/>
+    <testcase name="testGetAndDecrement" classname="edu.vuum.mocca.SimpleAtomicLongUnitTest" time="0.0"/>
+  </testsuite>
+</testrun>

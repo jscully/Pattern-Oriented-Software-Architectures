@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+/home/joseph/mooc-workspace/.metadata/.plugins/org.eclipse.jdt.core
+992167222.index
+1735676311.index
+2195731971.index

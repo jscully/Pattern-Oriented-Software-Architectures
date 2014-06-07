@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SimpleSemaphoreUnitTest" project="W3-A2-PalantirManager" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.vuum.mocca.SimpleSemaphoreUnitTest" time="0.0">
+    <testcase name="testAcquire" classname="edu.vuum.mocca.SimpleSemaphoreUnitTest" time="0.0"/>
+    <testcase name="testAcquireUninterruptibly" classname="edu.vuum.mocca.SimpleSemaphoreUnitTest" time="0.0"/>
+    <testcase name="testAvailablePermits" classname="edu.vuum.mocca.SimpleSemaphoreUnitTest" time="0.0"/>
+    <testcase name="testRelease" classname="edu.vuum.mocca.SimpleSemaphoreUnitTest" time="0.0"/>
+    <testcase name="testSimpleSemaphore" classname="edu.vuum.mocca.SimpleSemaphoreUnitTest" time="0.0"/>
+  </testsuite>
+</testrun>
