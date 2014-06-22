@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="35" version="2.0">
+<workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
-<window height="744" maximized="true" width="1020" x="1734" y="284">
+<window height="773" maximized="true" width="1012" x="1837" y="266">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -10,17 +10,19 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="144" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.python.pydev.debug.actionSet" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="com.python.pydev.navigate.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="116" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -30,10 +32,16 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayPingPong.java" partName="PlayPingPong.java" path="/home/joseph/mooc-workspace/W5-A4-Android/src/edu/vuum/mocca/PlayPingPong.java" title="PlayPingPong.java" tooltip="W5-A4-Android/src/edu/vuum/mocca/PlayPingPong.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/W5-A4-Android/src/edu/vuum/mocca/PlayPingPong.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -42,9 +50,12 @@
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
 <viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
 </view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="677" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="677" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="523"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -84,6 +95,12 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
 <columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="801" org.eclipse.ui.ide.pathField="406" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="250"/>
@@ -99,10 +116,14 @@
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -230,26 +251,23 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.jdt.junit.ResultView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
 <folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -260,13 +278,14 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.24959394" ratioLeft="461" ratioRight="1386" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7494781" ratioLeft="718" ratioRight="240" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.2736434" ratioLeft="353" ratioRight="937" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.64696735" ratioLeft="416" ratioRight="227" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -275,6 +294,7 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -285,12 +305,97 @@
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.5" ratioLeft="359" ratioRight="359" relationship="4" relative="org.eclipse.ui.internal.ViewStack@db7aae1">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.python.pydev.navigate.actionSet"/>
+<alwaysOnActionSet id="com.python.pydev.debug.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.python.pydev.exceptionBreakpoints"/>
+<alwaysOnActionSet id="org.python.pydev.pyPropertyTrace"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74958634" ratioLeft="1359" ratioRight="454" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7494759" ratioLeft="715" ratioRight="239" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.44895104" ratioLeft="321" ratioRight="394" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74958634" ratioLeft="1359" ratioRight="454" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.4997242" ratioLeft="906" ratioRight="907" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -299,7 +404,173 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/W4-A3-PingPongRight/src/edu/vuum/mocca/PingPongRight.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/W4-A3-PingPongRight/Assignment-Description.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PingPongConsole/src/edu/vuum/mocca/ConsolePlatformStrategy.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PingPongConsole/src/edu/vuum/mocca/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PingPongConsole/src/edu/vuum/mocca/Options.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PingPongConsole/src/edu/vuum/mocca/PlatformStrategy.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PingPongConsole/src/edu/vuum/mocca/PlatformStrategyFactory.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PingPongConsole/src/edu/vuum/mocca/PlayPingPong.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/W4-A3-PingPongRight/src/edu/vuum/mocca/SimpleSemaphore.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PingPongConsole/src/edu/vuum/mocca/PlayPingPong.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/W4-A3-PingPongRight/Assignment-Description.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/W4-A3-PingPongRight/Assignment-Description.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/W5-A4-Android/src/edu/vuum/mocca/PlayPingPong.java"/>
+</editors>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="2906" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="5444" y="9"/>
+</item>
+<item historyLabel="PlatformStrategyFactory.java" index="6">
+<position info="not_deleted" x="1160" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="5444" y="9"/>
+</item>
+<item historyLabel="ConsolePlatformStrategy.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="5467" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="7778" y="56"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="5515" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="8607" y="0"/>
+</item>
+<item historyLabel="Assignment-Description.txt" index="1">
+<position info="not_deleted" x="3574" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="7206" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Options.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PlatformStrategy.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PlatformStrategyFactory.java" index="6">
+<position info="not_deleted" x="1160" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="5515" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="7206" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="6235" y="7"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="1096" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="6235" y="7"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="8222" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="7">
+<position info="not_deleted" x="9683" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="8222" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position/>
+</item>
+<item historyLabel="SimpleSemaphore.java" index="8">
+<position/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3225" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3018" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3255" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3216" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3215" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3245" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3255" y="0"/>
+</item>
+<item historyLabel="SimpleSemaphore.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SimpleSemaphore.java" index="8">
+<position info="not_deleted" x="1484" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="9">
+<position info="not_deleted" x="9683" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3255" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="3410" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="4349" y="0"/>
+</item>
+<item historyLabel="SimpleSemaphore.java" index="8">
+<position info="not_deleted" x="1792" y="0"/>
+</item>
+<item historyLabel="PlayPingPong.java" index="9">
+<position info="not_deleted" x="9683" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="2836" y="0"/>
+</item>
+<item historyLabel="Assignment-Description.txt" index="10">
+<position info="not_deleted" x="1628" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="2836" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="1725" y="0"/>
+</item>
+<item historyLabel="Assignment-Description.txt" index="11">
+<position info="not_deleted" x="3585" y="0"/>
+</item>
+<item historyLabel="PingPongRight.java" index="0">
+<position info="not_deleted" x="1096" y="0"/>
+</item>
+<item active="true" historyLabel="PlayPingPong.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -317,35 +588,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleSemaphore.java" tooltip="W3-A2-PalantirManager/src/SimpleSemaphore.java">
-<persistable path="/W3-A2-PalantirManager/src/SimpleSemaphore.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayPingPong.java" tooltip="W5-A4-Android/src/edu/vuum/mocca/PlayPingPong.java">
+<persistable path="/W5-A4-Android/src/edu/vuum/mocca/PlayPingPong.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Assignment-Description.txt" tooltip="W4-A3-PingPongRight/Assignment-Description.txt">
+<persistable path="/W4-A3-PingPongRight/Assignment-Description.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleSemaphore.java" tooltip="W4-A3-PingPongRight/src/edu/vuum/mocca/SimpleSemaphore.java">
+<persistable path="/W4-A3-PingPongRight/src/edu/vuum/mocca/SimpleSemaphore.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayPingPong.java" tooltip="PingPongConsole/src/edu/vuum/mocca/PlayPingPong.java">
+<persistable path="/PingPongConsole/src/edu/vuum/mocca/PlayPingPong.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlatformStrategyFactory.java" tooltip="PingPongConsole/src/edu/vuum/mocca/PlatformStrategyFactory.java">
+<persistable path="/PingPongConsole/src/edu/vuum/mocca/PlatformStrategyFactory.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlatformStrategy.java" tooltip="PingPongConsole/src/edu/vuum/mocca/PlatformStrategy.java">
+<persistable path="/PingPongConsole/src/edu/vuum/mocca/PlatformStrategy.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Options.java" tooltip="PingPongConsole/src/edu/vuum/mocca/Options.java">
+<persistable path="/PingPongConsole/src/edu/vuum/mocca/Options.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="PingPongConsole/src/edu/vuum/mocca/Main.java">
+<persistable path="/PingPongConsole/src/edu/vuum/mocca/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsolePlatformStrategy.java" tooltip="PingPongConsole/src/edu/vuum/mocca/ConsolePlatformStrategy.java">
+<persistable path="/PingPongConsole/src/edu/vuum/mocca/ConsolePlatformStrategy.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingPongRightTest.java" tooltip="W4-A3-PingPongRight/test/edu/vuum/mocca/PingPongRightTest.java">
+<persistable path="/W4-A3-PingPongRight/test/edu/vuum/mocca/PingPongRightTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleSemaphore.java" tooltip="W3-A2-PalantirManager/src/edu/vuum/mocca/SimpleSemaphore.java">
+<persistable path="/W3-A2-PalantirManager/src/edu/vuum/mocca/SimpleSemaphore.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingPongRight.java" tooltip="W4-A3-PingPongRight/src/edu/vuum/mocca/PingPongRight.java">
+<persistable path="/W4-A3-PingPongRight/src/edu/vuum/mocca/PingPongRight.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleAtomicLong.java" tooltip="W3-A2-PalantirManager/src/edu/vuum/mocca/SimpleAtomicLong.java">
+<persistable path="/W3-A2-PalantirManager/src/edu/vuum/mocca/SimpleAtomicLong.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleAtomicLong.java" tooltip="W2-A1-SimpleAtomicLong/src/edu/vuum/mocca/SimpleAtomicLong.java">
 <persistable path="/W2-A1-SimpleAtomicLong/src/edu/vuum/mocca/SimpleAtomicLong.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleAtomicLong.java" tooltip="W3-A2-PalantirManager/src/SimpleAtomicLong.java">
-<persistable path="/W3-A2-PalantirManager/src/SimpleAtomicLong.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Assignment-Description.txt" tooltip="W3-A2-PalantirManager/Assignment-Description.txt">
 <persistable path="/W3-A2-PalantirManager/Assignment-Description.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuggyLongTest.java" tooltip="W2-A1-SimpleAtomicLong/src/edu/vuum/mocca/BuggyLongTest.java">
-<persistable path="/W2-A1-SimpleAtomicLong/src/edu/vuum/mocca/BuggyLongTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Assignment-Description.txt" tooltip="W2-A1-SimpleAtomicLong/Assignment-Description.txt">
-<persistable path="/W2-A1-SimpleAtomicLong/Assignment-Description.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SynchronizedQueue.java" tooltip="W1-A0-SynchronizedQueueTest/src/edu/vuum/mooca/SynchronizedQueue.java">
-<persistable path="/W1-A0-SynchronizedQueueTest/src/edu/vuum/mooca/SynchronizedQueue.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SynchronizedQueueTest.java" tooltip="W1-A0-SynchronizedQueueTest/src/edu/vuum/mooca/SynchronizedQueueTest.java">
-<persistable path="/W1-A0-SynchronizedQueueTest/src/edu/vuum/mooca/SynchronizedQueueTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="MyTestProject/src/Main.java">
-<persistable path="/MyTestProject/src/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Assignment-Description.txt" tooltip="W1-A0-SynchronizedQueueTest/Assignment-Description.txt">
-<persistable path="/W1-A0-SynchronizedQueueTest/Assignment-Description.txt"/>
 </file>
 </mruList>
 </workbench>

@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
-		<item value="395" key="DIALOG_Y_ORIGIN"/>
-		<item value="120" key="DIALOG_X_ORIGIN"/>
+		<item value="307" key="DIALOG_Y_ORIGIN"/>
+		<item value="699" key="DIALOG_X_ORIGIN"/>
 		<item value="437" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="TODO" key="selection"/>
+		<item value="PlayPingPongThread" key="selection"/>
 		<list key="findhistory">
-			<item value="todo"/>
-			<item value="Long"/>
-			<item value="tod"/>
-			<item value="SynchronizedQueueResult"/>
-			<item value="result"/>
-			<item value="testQueue"/>
-			<item value="test"/>
-			<item value="SynchronizedQueue"/>
+			<item value="PlayPingPongThread"/>
+			<item value="2"/>
+			<item value="mMaxIterations"/>
+			<item value="run"/>
+			<item value="countdown"/>
+			<item value="thread"/>
+			<item value="mLatch"/>
+			<item value="pingOrPong"/>
 		</list>
 		<list key="replacehistory">
 		</list>

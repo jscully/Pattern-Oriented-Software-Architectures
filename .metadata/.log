@@ -582,3 +582,57 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 
 !ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-06-07 12:44:00.372
 !MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2014-06-07 15:42:06.111 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-06-07 15:42:19.076
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2014-06-08 11:17:13.179 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-06-08 11:17:57.397
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2014-06-14 11:01:08.510 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-06-14 11:01:28.011
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2014-06-15 15:57:55.827 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Command-line arguments:  -data /home/joseph/mooc-workspace -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-06-15 15:57:59.464
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2014-06-21 14:25:41.156 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Command-line arguments:  -data /home/joseph/mooc-workspace -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-06-21 14:25:45.854
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2014-06-22 13:42:46.876 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-06-22 13:43:13.032
+!MESSAGE No search provider was registed. Tasks search is not available.

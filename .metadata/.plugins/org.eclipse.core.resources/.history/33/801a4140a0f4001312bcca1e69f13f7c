@@ -1,0 +1,236 @@
+package edu.vuum.mocca;
+
+// Import the necessary Java synchronization and scheduling classes.
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Semaphore;
+
+import javax.management.openmbean.SimpleType;
+
+/**
+ * @class PingPongRight
+ * 
+ * @brief This class implements a Java program that creates two
+ *        instances of the PlayPingPongThread and start these thread
+ *        instances to correctly alternate printing "Ping" and "Pong",
+ *        respectively, on the console display.
+ */
+public class PingPongRight {
+    /**
+     * Number of iterations to run the test program.
+     */
+    public final static int mMaxIterations = 10;
+
+    /**
+     * Latch that will be decremented each time a thread exits.
+     */
+    public static CountDownLatch mLatch = null;
+
+    /**
+     * @class PlayPingPongThread
+     * 
+     * @brief This class implements the ping/pong processing algorithm
+     *        using the SimpleSemaphore to alternate printing "ping"
+     *        and "pong" to the console display.
+     */
+    public static class PlayPingPongThread extends Thread {
+
+        /**
+         * Constants to distinguish between ping and pong
+         * SimpleSemaphores, if you choose to use an array of
+         * SimpleSemaphores.  If you don't use this implementation
+         * feel free to remove these constants.
+         */
+        private final static int FIRST_SEMA = 0;
+        private final static int SECOND_SEMA = 1;
+
+        /**
+         * Maximum number of loop iterations.
+         */
+        private int mMaxLoopIterations = 0;
+
+        /**
+         * String to print (either "ping!" or "pong"!) for each
+         * iteration.
+         */
+        // TODO - You fill in here.
+        //// Here is what you have to do. You have to create a string that will also be
+        //// initialized in the constructor. And that string of course will either be 
+        //// ping or pong. Or actually, it will print whatever you pass to it as the driver
+        //// program shows. The default is to print ping or pong, but for the test cases we
+        //// printed a and b, because it was a little simpler and more concise.
+        volatile String pingOrPong = null;
+
+        /**
+         * Two SimpleSemaphores use to alternate pings and pongs.  You
+         * can use an array of SimpleSemaphores or just define them as
+         * two data members.
+         */
+        // TODO - You fill in here.
+        //// You now have to create two simplesemaphores. There is a couple of ways to do 
+        //// this. The way I did it was to create an array of two entries and then I used 
+        //// these final static ints (FIRST_SEMA, SECOND_SEMA) as indices into the array. 
+        //// That's one way how to do it. You don't have to do it that way. You can define
+        //// two simplesemaphores and call them firstsemaphore and secondsemaphore, or
+        //// whatever you want, like semaphoreA and semaphoreB. There is lots of leeway
+        //// there. Either way, however you feel like doing it and as long as it works
+        //// correctly. People have asked the question can we get by with just one
+        //// simplesemaphore. I think the answer is definitively no, but I'm always willing
+        //// to be proven wrong. But so far nobody has been able to show a way to use a
+        //// single simplesemaphore that is correct, where correct means that pings start
+        //// before pongs and so on.
+        private SimpleSemaphore[] semaphores = new SimpleSemaphore[2];
+
+        /**
+         * Constructor initializes the data member(s).
+         */
+        public PlayPingPongThread(String stringToPrint,
+                                  SimpleSemaphore semaphoreOne,
+                                  SimpleSemaphore semaphoreTwo,
+                                  int maxIterations) {
+            // TODO - You fill in here.
+        	this.pingOrPong = stringToPrint;
+        	this.semaphores[FIRST_SEMA] = semaphoreOne;
+        	this.semaphores[SECOND_SEMA] = semaphoreTwo;
+        }
+
+        /**
+         * Main event loop that runs in a separate thread of control
+         * and performs the ping/pong algorithm using the
+         * SimpleSemaphores.
+         */
+        public void run() {
+            /**
+             * This method runs in a separate thread of control and
+             * implements the core ping/pong algorithm.
+             */
+
+            // TODO - You fill in here.
+        	 //// The run method of course is going to be called back when the 
+            //// playpingpongthread is started or when an instance of the 
+            //// playpingpongthread is started. And this is basically a main event and all it
+            //// does is it just runs there and it aquires the appropriate semaphore, prints
+            //// out the appropriate string, and then it goes ahead and releases the 
+            //// semaphore, and of course it does that in a loop. And how long do you loop?
+            //// You loop for maxiteration times. And every time you print it, you print out
+            //// ping or pong or whatever the string is, and also the iteration number. And
+            //// hopefully that is clear from reading the assignment description, where it
+            //// shows what the output should look like. So that's basically what that is.
+            //// Here is a huge hint: if you go watch the videos on java synchronization and
+            //// scheduling example, you will see pretty much how to do this. So a good 
+            //// incentive to watch the videos.
+        	for(int i = 1; i >= mMaxLoopIterations; ++i){
+        		acquire();
+        		System.out.println(pingOrPong + "(" + i + ")");
+        		release();
+        	}
+        	mLatch.countDown();
+        }
+
+        /**
+         * Method for acquiring the appropriate SimpleSemaphore.
+         */
+        private void acquire() {
+            // TODO fill in here
+        	System.out.println("acquire here");
+       //// Here is a method for aquiring the simplesemaphore. And, so basically what you
+            //// are going to do here is you are going to aquire the simplesemaphore. I would
+            //// recommend aquiring the simplesemaphore uninterruptably, because as you can
+            //// see aquire does not throw an exception here. So you need to do something that
+            //// will not throw an exception. So my implementation now uses aquire
+            //// uninterruptably. And so what you do is you basically go back and forth. 
+            //// Aquire will aquire the first semaphore 
+        	semaphores[FIRST_SEMA].acquireUninterruptibly();
+        }
+
+        /**
+         * Method for releasing the appropriate SimpleSemaphore.
+         */
+        private void release() {
+            // TODO fill in here
+       //// And then release will then go ahead and release the second semaphore. And as
+            //// you can imagine, you just call release here, you're calling release on the
+            //// semaphore. And that's why we have two semaphores. One is aquired, one is
+            //// released. And they alternate going back and forth, back and forth. So that's
+            //// kind of how it works. 
+        	System.out.println("release here");
+        	semaphores[SECOND_SEMA].release();
+        }
+    }
+
+    /**
+     * The method that actually runs the ping/pong program.
+     */
+    public static void process(String startString, 
+                               String pingString,
+                               String pongString, 
+                               String finishString, 
+                               int maxIterations) throws InterruptedException {
+
+        // TODO initialize this by replacing null with the appropriate
+        // constructor call.
+    	//// Now, here is actually where we have to do some work. So. here is where we have to
+        //// initialize the latch to the appropriate number of countdown latches. Or you
+        //// initialize countdownlatch constructor to the appropriate number. I'll give you a
+        //// hint: there's two threads, so you need to wait for two things. So I hope that is
+        //// pretty clear. The reason this goes here of course is that it needs to be
+        //// re-initialized each time process is called.
+        mLatch = new CountDownLatch(2);
+        
+
+        // Create the ping and pong SimpleSemaphores that control
+        // alternation between threads.
+
+        // TODO - You fill in here, make pingSema start out unlocked.
+        SimpleSemaphore pingSema = new SimpleSemaphore(1, false);
+        // TODO - You fill in here, make pongSema start out locked.
+        SimpleSemaphore pongSema = new SimpleSemaphore(0, false);
+        //// Now you go ahead and create two semaphores, a ping semaphore and a pong semaphore.
+        //// The ping semaphore needs to start out unlocked, and the pong semaphore needs to
+        //// start out locked. So we're using our simplesemaphore as a binary semaphore, even
+        //// though it got the potential to also be a counting semaphore. Obviously, to make a 
+        //// semaphore unlocked, you give it a parameter that make it unlocked so someone can
+        //// aquire it. To make it locked, you have to give it an initial permit count that
+        //// will start out locked. So I hope that is pretty straight forward. Again, if you
+        //// watch the video, you will find out more about that
+
+        System.out.println(startString);
+
+        // Create the ping and pong threads, passing in the string to
+        // print and the appropriate SimpleSemaphores.
+        PlayPingPongThread ping = new PlayPingPongThread("Ping", pingSema, pongSema, maxIterations/*
+                                                          * TODO - You fill in
+                                                          * here
+                                                          */);
+        PlayPingPongThread pong = new PlayPingPongThread("Pong", pongSema, pingSema, maxIterations/*
+                                                          * TODO - You fill in
+                                                          * here
+                                                          */);
+
+        // TODO - Initiate the ping and pong threads, which will call
+        // the run() hook method.
+       Thread t = new Thread(ping);
+       t.start();
+       Thread t2 = new Thread(pong);
+       t2.start();
+        // TODO - replace the following line with a barrier
+        // synchronizer call to mLatch that waits for both threads to
+        // finish.
+        mLatch.await();
+
+        System.out.println(finishString);
+    }
+
+    /**
+     * The main() entry point method into PingPongRight program.
+     * 
+     * @throws InterruptedException
+     */
+    public static void main(String[] args) throws InterruptedException {
+        process("Ready...Set...Go!", 
+                "Ping!  ",
+                " Pong! ",
+                "Done!",
+                mMaxIterations);
+    }
+}
+
